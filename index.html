@@ -1,0 +1,398 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+ 
+<style type="text/css">
+body{
+background-color:#FFB3CA;
+background-image: url('') !important;
+background-repeat:no-repeat !important;
+background-position:center !important;
+background-size:contain;
+}
+ 
+::-webkit-scrollbar {width: 4px; height: 4px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #FFB3CA;}
+ 
+#bigbox {
+position:absolute;
+background-color:#FED4D8;
+width:40%;
+height:50%;
+top:25%;
+left:30%;
+}
+ 
+#tabarea {
+position:absolute;
+background-color:#FEECEA;
+width:40%;
+height:8%;
+top:25%;
+left:30%;
+}
+ 
+#content {
+position:absolute;
+background-color:#FEE0E0;
+width:25%;
+height:38%;
+top:35%;
+left:31%;
+font-size:1.5vh;
+color:#000000;
+font-family: 'Roboto Condensed', sans-serif;
+}
+ 
+#pic {
+position:absolute;
+background-color:#FEE0E0;
+width:12%;
+height:38%;
+top:35%;
+left:57%;
+}
+ 
+#gif1 {
+position:absolute;
+width:3%;
+height:6%;
+top:26%;
+left:31%;
+background-image: url('https://media.giphy.com/media/5kFczz02E7rzYQGuNT/giphy.gif') !important;
+background-repeat:no-repeat !important;
+background-position:center !important;
+background-size:contain;
+}
+ 
+#gif2 {
+position:absolute;
+width:3%;
+height:6%;
+top:26%;
+left:66%;
+background-image: url('https://media.giphy.com/media/5zmt7fjP6hDMP7zOhE/giphy.gif') !important;
+background-repeat:no-repeat !important;
+background-position:center !important;
+background-size:contain;
+}
+ 
+#tabbox1 {
+position:absolute;
+height:8%;
+width:5%;
+top:25%;
+left:40%;
+text-align:center;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+font-size:2vh;
+color:#E43963;
+line-height:4;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+#tabbox2 {
+position:absolute;
+height:8%;
+width:5%;
+top:25%;
+left:45%;
+text-align:center;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+font-size:2vh;
+color:#E43963;
+line-height:4;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+#tabbox3 {
+position:absolute;
+height:8%;
+width:5%;
+top:25%;
+left:50%;
+text-align:center;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+font-size:2vh;
+color:#E43963;
+line-height:4;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+#tabbox4 {
+position:absolute;
+height:8%;
+width:5%;
+top:25%;
+left:55%;
+text-align:center;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+font-size:2vh;
+color:#E43963;
+line-height:4;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover {
+background-color:#FED4D8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+#basicbox {
+position:absolute;
+background-color:#FEECEA;
+overflow:auto;
+padding:1%;
+width:30%;
+height:42%;
+top:4%;
+left:3%;
+}
+ 
+#detailbox {
+position:absolute;
+background-color:#FEECEA;
+overflow:auto;
+padding:1%;
+width:57%;
+height:42%;
+top:4%;
+left:38%;
+}
+ 
+#historybox {
+position:absolute;
+background-color:#FEECEA;
+overflow:auto;
+padding:1%;
+width:92%;
+height:41%;
+top:52%;
+left:3%;
+}
+ 
+#inventorybox {
+position:absolute;
+background-color:#FEECEA;
+overflow:auto;
+padding:1%;
+width:28%;
+height:89.5%;
+top:4%;
+left:3%;
+}
+ 
+#weaponsbox {
+position:absolute;
+background-color:#FEECEA;
+overflow:auto;
+padding:1%;
+width:28%;
+height:89.5%;
+top:4%;
+left:35%;
+}
+ 
+#mediumbox {
+position:absolute;
+background-color:#FEECEA;
+overflow:auto;
+padding:1%;
+width:28%;
+height:89.5%;
+top:4%;
+left:67%;
+}
+ 
+#madragorabox {
+position:absolute;
+background-color:#FEECEA;
+overflow:auto;
+padding:1%;
+width:43%;
+height:89%;
+top:4%;
+left:3%;
+}
+ 
+#posthmbox {
+position:absolute;
+background-color:#FEECEA;
+overflow:auto;
+padding:1%;
+width:43%;
+height:89%;
+top:4%;
+left:52%;
+}
+ 
+#treedescription {
+position:absolute;
+background-color:#E43963;
+overflow:auto;
+padding:1%;
+width:92%;
+height:30%;
+top:4%;
+left:3%;
+font-size:1.5vh;
+color:#FFFFFF;
+font-family: 'Roboto Condensed', sans-serif;
+}
+ 
+#spells {
+position:absolute;
+background-color:#FEECEA;
+overflow:auto;
+padding:1%;
+width:92%;
+height:51%;
+top:42%;
+left:3%;
+}
+ 
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8 {
+display:none;
+}
+ 
+.tabs {
+display:block;
+width:100%;
+height:100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+h1 {
+color:#E43963;
+border-bottom:1px dashed #E43963;
+font-family: 'Spicy Rice', cursive;
+font-size:1.5vh;
+letter-spacing:2px;
+}
+ 
+a {
+color:#FFB3CA;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+a:hover {
+color:#666666;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+i {
+color:#666666;
+}
+ 
+b {
+color:#FFB3CA;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+}
+</style>
+ 
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Spicy+Rice" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('pic').innerHTML=document.getElementById(id).innerHTML}</script>
+ 
+<div id="bigbox"></div>
+<div id="tabarea"></div>
+<div id="content">
+<div id="basicbox">
+<h1>Basic Info</h1>
+</div>
+<div id="detailbox">
+<h1>Detailed Info</h1>
+</div>
+<div id="historybox">
+<h1>Backstory</h1>
+</div>
+</div>
+<div id="pic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/cL3fKpY.jpg"/>
+</div>
+<div id="gif1"></div>
+<div id="gif2"></div>
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">Items</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">Racials</span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">First</span>
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">Second</span>
+</div>
+ 
+<div id="tab1">
+<div id="inventorybox">
+<h1>Inventory</h1>
+</div>
+<div id="weaponsbox">
+<h1>Weapons</h1>
+</div>
+<div id="mediumbox">
+<h1>Medium</h1>
+</div>
+</div>
+<div id="tab2">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Sa3FL3A.png"/>
+</div>
+ 
+<div id="tab3">
+<div id="madragorabox">
+<h1>Madragora Racials</h1>
+</div>
+<div id="posthmbox">
+<h1>Post High Mage</h1>
+</div>
+</div>
+<div id="tab4">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/xL2hAWN.jpg"/>
+</div>
+ 
+<div id="tab5">
+<div id="treedescription">
+<h1><FONT COLOR="#FEE0E0">Enchantment (Paige)</FONT></h1>
+The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted.
+</div>
+<div id="spells">
+<h1>Paige Spells</h1>
+</div>
+</div>
+<div id="tab6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/gGdgP6m.jpg"/>
+</div>
+ 
+<div id="tab7">
+<div id="treedescription">
+<h1><FONT COLOR="#FEE0E0">???</FONT></h1>
+</div>
+<div id="spells">
+</div>
+</div>
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/RwPLTpw.png"/>
+</div>
