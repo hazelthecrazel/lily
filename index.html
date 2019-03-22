@@ -6,7 +6,7 @@ background-color:#FFB3CA;
 background-image: url('') !important;
 background-repeat:no-repeat !important;
 background-position:center !important;
-background-size:contain;
+background-size:100% 100%;
 }
  
 ::-webkit-scrollbar {width: 4px; height: 4px;}
@@ -16,78 +16,43 @@ background-size:contain;
 #bigbox {
 position:absolute;
 background-color:#FED4D8;
-width:40%;
-height:50%;
-top:25%;
-left:30%;
+width:60%;
+height:70%;
+top:15%;
+left:20%;
+}
+
+#pic {
+position:absolute;
+background-color:#FEE0E0;
+width:20%;
+height:66%;
+top:17%;
+left:21%;
 }
  
 #tabarea {
 position:absolute;
-background-color:#FEECEA;
-width:40%;
+background-color:#FEE0E0;
+width:37%;
 height:8%;
-top:25%;
-left:30%;
+top:17%;
+left:42%;
 }
- 
-#content {
-position:absolute;
-background-color:#FEE0E0;
-width:25%;
-height:38%;
-top:35%;
-left:31%;
-font-size:1.15vh;
-color:#000000;
-font-family: 'Roboto Condensed', sans-serif;
-}
- 
-#pic {
-position:absolute;
-background-color:#FEE0E0;
-width:12%;
-height:38%;
-top:35%;
-left:57%;
-}
- 
-#gif1 {
-position:absolute;
-width:3%;
-height:6%;
-top:26%;
-left:31%;
-background-image: url('https://media.giphy.com/media/5kFczz02E7rzYQGuNT/giphy.gif') !important;
-background-repeat:no-repeat !important;
-background-position:center !important;
-background-size:contain;
-}
- 
-#gif2 {
-position:absolute;
-width:3%;
-height:6%;
-top:26%;
-left:66%;
-background-image: url('https://media.giphy.com/media/5zmt7fjP6hDMP7zOhE/giphy.gif') !important;
-background-repeat:no-repeat !important;
-background-position:center !important;
-background-size:contain;
-}
- 
+
 #tabbox1 {
 position:absolute;
-height:8%;
+height:4%;
 width:5%;
-top:25%;
-left:40%;
+top:19%;
+left:43%;
+border:1px solid #E43963;
 text-align:center;
 font-family: 'Roboto Condensed', sans-serif;
 text-transform:uppercase;
 font-size:2vh;
 color:#E43963;
-line-height:4;
+line-height:2.2;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
@@ -95,16 +60,17 @@ transition: all 0.8s ease-out;
  
 #tabbox2 {
 position:absolute;
-height:8%;
+height:4%;
 width:5%;
-top:25%;
-left:45%;
+top:19%;
+left:49%;
+border:1px solid #E43963;
 text-align:center;
 font-family: 'Roboto Condensed', sans-serif;
 text-transform:uppercase;
 font-size:2vh;
 color:#E43963;
-line-height:4;
+line-height:2.2;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
@@ -112,16 +78,17 @@ transition: all 0.8s ease-out;
  
 #tabbox3 {
 position:absolute;
-height:8%;
+height:4%;
 width:5%;
-top:25%;
-left:50%;
+top:19%;
+left:55%;
+border:1px solid #E43963;
 text-align:center;
 font-family: 'Roboto Condensed', sans-serif;
 text-transform:uppercase;
 font-size:2vh;
 color:#E43963;
-line-height:4;
+line-height:2.2;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
@@ -129,143 +96,378 @@ transition: all 0.8s ease-out;
  
 #tabbox4 {
 position:absolute;
-height:8%;
+height:4%;
 width:5%;
-top:25%;
-left:55%;
+top:19%;
+left:61%;
+border:1px solid #E43963;
 text-align:center;
 font-family: 'Roboto Condensed', sans-serif;
 text-transform:uppercase;
 font-size:2vh;
 color:#E43963;
-line-height:4;
+line-height:2.2;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
- 
-#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover {
-background-color:#FED4D8;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
- 
-#basicbox {
+
+#tabbox5 {
 position:absolute;
-background-color:#FEECEA;
-overflow:auto;
-padding:1%;
-width:30%;
-height:42%;
-top:4%;
-left:3%;
-}
- 
-#detailbox {
-position:absolute;
-background-color:#FEECEA;
-overflow:auto;
-padding:1%;
-width:57%;
-height:42%;
-top:4%;
-left:38%;
-}
- 
-#historybox {
-position:absolute;
-background-color:#FEECEA;
-overflow:auto;
-padding:1%;
-width:92%;
-height:41%;
-top:52%;
-left:3%;
-}
- 
-#inventorybox {
-position:absolute;
-background-color:#FEECEA;
-overflow:auto;
-padding:1%;
-width:28%;
-height:89.5%;
-top:4%;
-left:3%;
-}
- 
-#weaponsbox {
-position:absolute;
-background-color:#FEECEA;
-overflow:auto;
-padding:1%;
-width:28%;
-height:89.5%;
-top:4%;
-left:35%;
-}
- 
-#mediumbox {
-position:absolute;
-background-color:#FEECEA;
-overflow:auto;
-padding:1%;
-width:28%;
-height:89.5%;
-top:4%;
+height:4%;
+width:5%;
+top:19%;
 left:67%;
+border:1px solid #E43963;
+text-align:center;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+font-size:2vh;
+color:#E43963;
+line-height:2.2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6 {
+position:absolute;
+height:4%;
+width:5%;
+top:19%;
+left:73%;
+border:1px solid #E43963;
+text-align:center;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+font-size:2vh;
+color:#E43963;
+line-height:2.2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
  
-#madragorabox {
+#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover,#tabbox5:hover,#tabbox6:hover {
+background-color:#E43963;
+color:#FEE0E0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+ 
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12 {
+display:none;
+}
+
+#infoarea {
+position:absolute;
+background-color:#FEE0E0;
+width:37%;
+height:56%;
+top:27%;
+left:42%;
+}
+
+#picicon {
+position:absolute;
+background-color:#FFB3CA;
+padding:1%;
+width:5%;
+height:10%;
+top:29%;
+left:43%;
+}
+
+#nametitle {
+position:absolute;
+background-color:#FFB3CA;
+width:4%;
+height:2%;
+top:29%;
+left:51%;
+color:#E43963;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+text-align:center;
+font-size:1.4vh;
+line-height:1.5;
+}
+
+#name {
 position:absolute;
 background-color:#FEECEA;
-overflow:auto;
-padding:1%;
-width:43%;
-height:89%;
-top:4%;
-left:3%;
+width:4.5%;
+height:2%;
+top:29%;
+left:55%;
+font-size:1.15vh;
+color:#000000;
+font-family: 'Roboto Condensed', sans-serif;
+text-align:center;
+line-height:2;
 }
- 
-#posthmbox {
+
+#age1title {
+position:absolute;
+background-color:#FFB3CA;
+width:4%;
+height:2%;
+top:29%;
+left:60.5%;
+color:#E43963;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+text-align:center;
+font-size:1.4vh;
+line-height:1.5;
+}
+
+#age1 {
 position:absolute;
 background-color:#FEECEA;
-overflow:auto;
-padding:1%;
-width:43%;
-height:89%;
-top:4%;
-left:52%;
+width:4%;
+height:2%;
+top:29%;
+left:64.5%;
+font-size:1.15vh;
+color:#000000;
+font-family: 'Roboto Condensed', sans-serif;
+text-align:center;
+line-height:2;
 }
- 
-#treedescription {
+
+#age2title {
+position:absolute;
+background-color:#FFB3CA;
+width:4%;
+height:2%;
+top:29%;
+left:69.5%;
+color:#E43963;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+text-align:center;
+font-size:1.4vh;
+line-height:1.5;
+}
+
+#age2 {
+position:absolute;
+background-color:#FEECEA;
+width:4.5%;
+height:2%;
+top:29%;
+left:73.5%;
+font-size:1.15vh;
+color:#000000;
+font-family: 'Roboto Condensed', sans-serif;
+text-align:center;
+line-height:2;
+}
+
+#gendertitle {
+position:absolute;
+background-color:#FFB3CA;
+width:4%;
+height:2%;
+top:33%;
+left:51%;
+color:#E43963;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+text-align:center;
+font-size:1.4vh;
+line-height:1.5;
+}
+
+#gender {
+position:absolute;
+background-color:#FEECEA;
+width:4.5%;
+height:2%;
+top:33%;
+left:55%;
+font-size:1.15vh;
+color:#000000;
+font-family: 'Roboto Condensed', sans-serif;
+text-align:center;
+line-height:2;
+}
+
+#speciestitle {
+position:absolute;
+background-color:#FFB3CA;
+width:4%;
+height:2%;
+top:33%;
+left:60.5%;
+color:#E43963;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+text-align:center;
+font-size:1.4vh;
+line-height:1.5;
+}
+
+#species {
+position:absolute;
+background-color:#FEECEA;
+width:4%;
+height:2%;
+top:33%;
+left:64.5%;
+font-size:1.15vh;
+color:#000000;
+font-family: 'Roboto Condensed', sans-serif;
+text-align:center;
+line-height:2;
+}
+
+#magictitle {
+position:absolute;
+background-color:#FFB3CA;
+width:4%;
+height:2%;
+top:33%;
+left:69.5%;
+color:#E43963;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+text-align:center;
+font-size:1.4vh;
+line-height:1.5;
+}
+
+#magic {
+position:absolute;
+background-color:#FEECEA;
+width:4.5%;
+height:2%;
+top:33%;
+left:73.5%;
+font-size:1.15vh;
+color:#000000;
+font-family: 'Roboto Condensed', sans-serif;
+text-align:center;
+line-height:2;
+}
+
+#ranktitle {
+position:absolute;
+background-color:#FFB3CA;
+width:4%;
+height:2%;
+top:37%;
+left:51%;
+color:#E43963;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+text-align:center;
+font-size:1.4vh;
+line-height:1.5;
+}
+
+#rank {
+position:absolute;
+background-color:#FEECEA;
+width:4.5%;
+height:2%;
+top:37%;
+left:55%;
+font-size:1.15vh;
+color:#000000;
+font-family: 'Roboto Condensed', sans-serif;
+text-align:center;
+line-height:2;
+}
+
+#heighttitle {
+position:absolute;
+background-color:#FFB3CA;
+width:4%;
+height:2%;
+top:37%;
+left:60.5%;
+color:#E43963;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+text-align:center;
+font-size:1.4vh;
+line-height:1.5;
+}
+
+#height {
+position:absolute;
+background-color:#FEECEA;
+width:4%;
+height:2%;
+top:37%;
+left:64.5%;
+font-size:1.15vh;
+color:#000000;
+font-family: 'Roboto Condensed', sans-serif;
+text-align:center;
+line-height:2;
+}
+
+#weighttitle {
+position:absolute;
+background-color:#FFB3CA;
+width:4%;
+height:2%;
+top:37%;
+left:69.5%;
+color:#E43963;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform:uppercase;
+text-align:center;
+font-size:1.4vh;
+line-height:1.5;
+}
+
+#weight {
+position:absolute;
+background-color:#FEECEA;
+width:4.5%;
+height:2%;
+top:37%;
+left:73.5%;
+font-size:1.15vh;
+color:#000000;
+font-family: 'Roboto Condensed', sans-serif;
+text-align:center;
+line-height:2;
+}
+
+#basictitle {
 position:absolute;
 background-color:#E43963;
-overflow:auto;
-padding:1%;
-width:92%;
-height:30%;
-top:4%;
-left:3%;
-font-size:1.5vh;
-color:#FFFFFF;
+width:27%;
+height:2%;
+top:41%;
+left:51%;
+font-size:1.4vh;
+color:#FEECEA;
 font-family: 'Roboto Condensed', sans-serif;
+text-align:center;
+line-height:1.5;
+text-transform:uppercase;
+letter-spacing:5px;
 }
  
-#spells {
+#content {
 position:absolute;
 background-color:#FEECEA;
-overflow:auto;
 padding:1%;
-width:92%;
-height:51%;
-top:42%;
-left:3%;
-}
- 
-#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8 {
-display:none;
+overflow:auto;
+width:33%;
+height:31.6%;
+top:45%;
+left:43%;
+font-size:1.3vh;
+color:#000000;
+font-family: 'Roboto Condensed', sans-serif;
 }
  
 .tabs {
@@ -316,129 +518,177 @@ text-transform:uppercase;
 <script>function changeNavigation1(id) {document.getElementById('pic').innerHTML=document.getElementById(id).innerHTML}</script>
  
 <div id="bigbox"></div>
-<div id="tabarea"></div>
-<div id="content">
-<div id="basicbox">
-<h1>Basic Info</h1>
- <b>Name:</b> Lily
- <br><b>Physical Age:</b> Ten Years Old
- <br><b>True Age:</b> Unknown
- <br><b>Gender:</b> Female
- <br><b>Species:</b> Madragora
- <br><b>Height:</b> 4'0
- <br><b>Weight:</b> 60 lbs
- <br><b>Primary Magic:</b> Enchantment
- <br><b>Rank:</b> Paige
-</div>
-<div id="detailbox">
-<h1>Detailed Info</h1>
- <b>Appearance</b>
- <br>The Madragora has a fairly proportional body for someone of her particular stature. Although technically created to have no defined gender, Lily's appearance is quite the obvious. Rather than be "genderless" Lily's creation resulted in a series of complex chemical reactions that sent her in the opposite direction. She adopted very feminine features, although not exaggerated it is very obvious she is a Female. Thick white hair starts at the crown of her head, transitioning in a smooth gradient to a dark pink shade at the tips. Lily has soft rounded cheeks and a narrow jawline that goes into a slightly pointed chin, showing off her somewhat plump lips. Behind these lips are a row of sharp teeth, giving her a menacing smile. Lily has large doe-like eyes which are a similar shade to the tips of her hair and her iris' are slits like a cat.
- <br><br><b>Personality</b>
- <br>Lily is.. rough. Born and raised with the belief that only the strongest survive in a harsh environment where her abnormalities weren't accepted, she had no choice but to learn and accept their customs. More often than not she is physically rough without intending to be, overestimating her strength and sometimes injuring those who plays with but very obviously shows remorse for these things. Regardless she is still stuck in a very young mindset since her body and mental faculties were never given the chance to grow despite her being much older than she looks so she can be easily trusting and excitable while also being easy to please.
-</div>
-<div id="historybox">
-<h1>Backstory</h1>
- <P align="center"<b>Work In Progress</b>
-</div>
-</div>
 <div id="pic">
 <img style="width:100%;height:100%;" src="https://i.imgur.com/xAs2TPO.png"/>
 </div>
-<div id="gif1"></div>
-<div id="gif2"></div>
+<div id="tabarea"></div>
+<div id="infoarea"></div>
+<div id="picicon">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/T8INLWE.png"/>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="name">
+Lily
+</div>
+<div id="age1title">
+P. Age:
+</div>
+<div id="age1">
+Ten
+</div>
+<div id="age2title">
+T. Age:
+</div>
+<div id="age2">
+Unknown
+</div>
+<div id="gendertitle">
+Gender:
+</div>
+<div id="gender">
+Female
+</div>
+<div id="speciestitle">
+Species:
+</div>
+<div id="species">
+Madragora
+</div>
+<div id="magictitle">
+P. Magic:
+</div>
+<div id="magic">
+Enchantment
+</div>
+<div id="ranktitle">
+Rank:
+</div>
+<div id="rank">
+Paige
+</div>
+<div id="heighttitle">
+Height:
+</div>
+<div id="height">
+4'0"
+</div>
+<div id="weighttitle">
+Weight:
+</div>
+<div id="weight">
+60 lbs.
+</div>
+<div id="basictitle">
+» ✧ » ✧ » Basic Information « ✧ « ✧ «
+</div>
+<div id="content">
+<h1>Appearance</h1>
+The Madragora has a fairly proportional body for someone of her particular stature. Although technically created to have no defined gender, Lily's appearance is quite the obvious. Rather than be "genderless" Lily's creation resulted in a series of complex chemical reactions that sent her in the opposite direction. She adopted very feminine features, although not exaggerated it is very obvious she is a Female. Thick white hair starts at the crown of her head, transitioning in a smooth gradient to a dark pink shade at the tips. Lily has soft rounded cheeks and a narrow jawline that goes into a slightly pointed chin, showing off her somewhat plump lips. Behind these lips are a row of sharp teeth, giving her a menacing smile. Lily has large doe-like eyes which are a similar shade to the tips of her hair and her iris' are slits like a cat.
+<br><br>
+<h1>Personality</h1>
+Lily is.. rough. Born and raised with the belief that only the strongest survive in a harsh environment where her abnormalities weren't accepted, she had no choice but to learn and accept their customs. More often than not she is physically rough without intending to be, overestimating her strength and sometimes injuring those who plays with but very obviously shows remorse for these things. Regardless she is still stuck in a very young mindset since her body and mental faculties were never given the chance to grow despite her being much older than she looks so she can be easily trusting and excitable while also being easy to please.
+</div>
+
 <div id="tabbox1">
-<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">Items</span>
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">Details</span>
 </div>
 <div id="tabbox2">
-<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">Racials</span>
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">History</span>
 </div>
 <div id="tabbox3">
-<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">M.M.</span>
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">Items</span>
 </div>
 <div id="tabbox4">
-<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">Primary</span>
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">Racials</span>
 </div>
- 
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10')">Universal</span>
+</div>
+<div id="tabbox6">
+<span class="tabs" onClick="changeNavigation ('tab11');changeNavigation1 ('tab12')">Primary</span>
+</div>
+
 <div id="tab1">
-<div id="inventorybox">
-<h1>Inventory</h1>
- <b>Nisha's Gauntlet</b>
- <br>A memento from her past, this item is a pretty shining Rose Gold gauntlet that fits the childs hand poorly. The gauntlet itself is of standard design, except there are several glistening gemstones inlaid into the top of its structure that makes a perfect Lily Flower design over the back of the hand and the whole thing is Iron in strength except for areas designed for flexibility which are equal to Aluminum. Nisha's Gauntlet belonged to her deceased creator and was entrusted to her upon his death that resulted in her being thrust out of her birthrealm and into the Ulreich universe.
- <br><br><b>Leather Satchel</b>
- <br>A small satchel constructed out of simple leather with a clip on the side to close it. This satchel is large enough to carry normal everyday things like a purse and currently is used to house her Slingshot ammunition.
- </div>
-<div id="weaponsbox">
-<h1>Weapons</h1>
- <b>Slingshot</b>
- <br>A small hand-held slingshot made of a thick twig. The slingshot is dense enough to take a moderate physical attack (less than Tin in strength meaning that it can be broken by base human strength) before breaking, and can shoot out small hand-held projectiles at the speed an average human could throw them overhand.
- <br><br><b>Glitter Rocks</b>
- <br>Very simple items. These are rocks that Lily has super-glued together to be the size of an average softball, covered in glitter and pretty colored rhinestones. Getting hit by these wouldn’t be very nice at all considering that they are completely solid.
-</div>
-<div id="mediumbox">
-<h1>Medium</h1>
-Unlocked at High Mage!
-</div>
+<h1>Appearance</h1>
+The Madragora has a fairly proportional body for someone of her particular stature. Although technically created to have no defined gender, Lily's appearance is quite the obvious. Rather than be "genderless" Lily's creation resulted in a series of complex chemical reactions that sent her in the opposite direction. She adopted very feminine features, although not exaggerated it is very obvious she is a Female. Thick white hair starts at the crown of her head, transitioning in a smooth gradient to a dark pink shade at the tips. Lily has soft rounded cheeks and a narrow jawline that goes into a slightly pointed chin, showing off her somewhat plump lips. Behind these lips are a row of sharp teeth, giving her a menacing smile. Lily has large doe-like eyes which are a similar shade to the tips of her hair and her iris' are slits like a cat.
+<br><br>
+<h1>Personality</h1>
+Lily is.. rough. Born and raised with the belief that only the strongest survive in a harsh environment where her abnormalities weren't accepted, she had no choice but to learn and accept their customs. More often than not she is physically rough without intending to be, overestimating her strength and sometimes injuring those who plays with but very obviously shows remorse for these things. Regardless she is still stuck in a very young mindset since her body and mental faculties were never given the chance to grow despite her being much older than she looks so she can be easily trusting and excitable while also being easy to please.
 </div>
 <div id="tab2">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/Sa3FL3A.png"/>
+<img style="width:100%;height:100%;" src="https://i.imgur.com/xAs2TPO.png"/>
 </div>
- 
+
 <div id="tab3">
-<div id="madragorabox">
-<h1>Madragora Racials</h1>
- <b>Immortality</b>
- <br>Madragora aren't conceived and born as the typical creature would be, and are the recycled souls of the dead given new bodies. These bodies are formed by a resurrection ritual including several materials and gemstones that determine body composition. The type of teeth determine what type of Madragora is created and their physical appearance, and the gemstones used determine intellectual and physical traits. Diamonds were used to construct her general form ( does not make her equal to diamonds in durability since she still retains base human durability ) which allows her to live until something other than old age claims her. The teeth used were Human teeth, giving her a similar outwards and internal framework.
- <br><br><b>Magic Aging</b>
- <br>The Ritual used to construct Madragora requires a great deal of magic, and this magic is imbued into every fiber of their being. Their chemical makeup is completely altered to grow only when their mana pool does -- albeit at meager amounts considering even a full grown Madragora will not look like an adult human -- in such a way that they can go through a large amount of progress in little time and remain unharmed. However, skipping from Paige to maximum rank could have fatal difficulties since their body is actively responding to mana growth. 
- <br><br><b>Enhanced Speed</b>
- <br>Lily's gemstones were brilliant topaz, allowing her to run at double the speed of the average human being would be able to. This requires several seconds for her to reach her maximum speed since she is incapable of reaching it instantly.
- <br><br><b>Enhanced Strength</b>
- <br>Another set of gems were used to form Lily's body: Ruby. The Rubies give her enhanced strength, allowing her to punch/kick twice as hard and lift things twice as heavy than the average human of her size could while also making her muscles take twice as long to heal if injured.
- <br><br><b>Heightened Reflexes</b>
- <br>The fourth type of gems used in Lily's creation were Sapphire. Sapphire are attributed to mental facilities such as reflexes and intellect. In this case, Lily can process information  and react to things twice as quickly than the average human would be able to.
-</div>
-<div id="posthmbox">
-<h1>Post High Mage</h1>
-Unlocked Upon Achieving Post High Mage Rank 1
-</div>
+<h1>Backstory</h1>
+<p align="center">Work in progress.</p>
 </div>
 <div id="tab4">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/xL2hAWN.jpg"/>
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Qewwxbr.png"/>
 </div>
- 
+
 <div id="tab5">
-<div id="treedescription">
-<h1><FONT COLOR="#FEE0E0">Mana Manipulation</FONT></h1>
-The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)
-</div>
-<div id="spells">
-<h1>Universal Spells</h1>
- <b>Mana Weave</b>
- <br>The simple act of moving one's mana pool through their own body. Channeling one's mana.
- <br><br><b>Mana Spark</b>
- <br>A basic mana projectile that can be used offensively or defensively. It causes no real damage other than a small sting when hit directly in the flesh.
-</div>
+<h1>Inventory</h1>
+<b>Nisha's Gauntlet</b>
+<br>A memento from her past, this item is a pretty shining Rose Gold gauntlet that fits the childs hand poorly. The gauntlet itself is of standard design, except there are several glistening gemstones inlaid into the top of its structure that makes a perfect Lily Flower design over the back of the hand and the whole thing is Iron in strength except for areas designed for flexibility which are equal to Aluminum. Nisha's Gauntlet belonged to her deceased creator and was entrusted to her upon his death that resulted in her being thrust out of her birthrealm and into the Ulreich universe.
+<br><br><b>Leather Satchel</b>
+<br>A small satchel constructed out of simple leather with a clip on the side to close it. This satchel is large enough to carry normal everyday things like a purse and currently is used to house her Slingshot ammunition.
+<br><br>
+<h1>Weapons</h1>
+<b>Slingshot</b>
+<br>A small hand-held slingshot made of a thick twig. The slingshot is dense enough to take a moderate physical attack (less than Tin in strength meaning that it can be broken by base human strength) before breaking, and can shoot out small hand-held projectiles at the speed an average human could throw them overhand.
+<br><br><b>Glitter Rocks</b>
+<br>Very simple items. These are rocks that Lily has super-glued together to be the size of an average softball, covered in glitter and pretty colored rhinestones. Getting hit by these wouldn’t be very nice at all considering that they are completely solid.
 </div>
 <div id="tab6">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/RwPLTpw.png"/>
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Sa3FL3A.png"/>
 </div>
- 
+
 <div id="tab7">
-<div id="treedescription">
-<h1><FONT COLOR="#FEE0E0">Enchantment (Paige)</FONT></h1>
-The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted.
-</div>
-<div id="spells">
- <h1>Paige Spells</h1>
- <b>Big Boom!</b>
- <br>The caster enchants an item no bigger than an average sword to become coated in a thick six-inch layer of easily broken cushion-like mana around one intended part after charging for one rotation. The object will remain otherwise unaffected but upon a large amount of force being applied to the cushion, it will burst and release the mana it held in an outwards blast of kinetic energy. This blast extends forwards in a three foot wide wave that is one foot from top to bottom that travels a maximum distance of ten feet and is capable of rending/warping physical constructs of Tin (scaling to Iron at mage) durability. The wave of kinetic energy causes very clear visible distortion in its path of travel, and is slow moving (about the speed of a fast-walk). Big Boom lasts for two posts and is single-use only, meaning that as soon as the mana bubble is broken the enchantment ends and immediately goes on a one rotation cool down timer but also that the cushion will explode on the final post regardless of circumstances even if no external force is applied. Can only be cast on nonsentient/nonbiological/nonmagical objects readily available to the caster for “free,” and they can’t measure more than five feet at any angle.
- <br><br><b>Sock 'Em</b>
- <br>This enchantment enhances the object's impact force (provided the object is no larger than a baseballl in size) for two full rotations before going on a one post cool down. While not actively increasing the actual weight of the item in question, the enchantment causes the item to begin charging up when moving through the air. The furthest possible distance an object can travel (in order for this enchantment to remain active and effective, not that the object itself will suddenly stop moving since it’s nonmagic) is ten feet. If the maximum of ten feet is achieved the objects impacting force is strong enough to feel like it’s slugging with added weight of up to ten pounds.Ten pounds is if the object travels as a projectile for a full ten feet, every foot it travels stacks a singular extra pound and this does not provide a piercing power, it has no destructive measurement, it simply increases the impacting force behind the base object. Can only be cast on nonsentient/nonbiological/nonmagical objects readily available to the caster for “free,” and they can’t measure more than five feet at any angle.
- <br><br><b>No Thanks~</b>
- <br>When used on an small handheld object, this enchantment will become covered in a thick layer of the caster’s own nonsolid mana for three maximum posts. Without help of extra mana, the object will do seemingly nothing at all, but if the Enchanter weaves half of the amount of mana it took to cast the enchantment in the first place, the mana coating will suddenly be able to be manipulated into a one-time use only rounded pane of solid mana equal to Tin (scaling to Iron at Mage) in strength so long as it is directly in contact with the item and can be formed anywhere along its structure. This barrier is two feet in diameter and is capable of defending against a singular attack of equal ranking before breaking, primarily physical attacks. After the secondary effect is used, the barrier may remain for one post (unless destroyed) before both the barrier and the enchantment itself completely deactivate regardless if it hasn't hit the three-post limit. Can only be cast on nonsentient/nonbiological/nonmagical objects readily available to the caster for “free,” and they can’t measure more than five feet at any angle.
-</div>
+<h1>Madragora Racials</h1>
+<b>Immortality</b>
+<br>Madragora aren't conceived and born as the typical creature would be, and are the recycled souls of the dead given new bodies. These bodies are formed by a resurrection ritual including several materials and gemstones that determine body composition. The type of teeth determine what type of Madragora is created and their physical appearance, and the gemstones used determine intellectual and physical traits. Diamonds were used to construct her general form ( does not make her equal to diamonds in durability since she still retains base human durability ) which allows her to live until something other than old age claims her. The teeth used were Human teeth, giving her a similar outwards and internal framework.
+<br><br><b>Magic Aging</b>
+<br>The Ritual used to construct Madragora requires a great deal of magic, and this magic is imbued into every fiber of their being. Their chemical makeup is completely altered to grow only when their mana pool does -- albeit at meager amounts considering even a full grown Madragora will not look like an adult human -- in such a way that they can go through a large amount of progress in little time and remain unharmed. However, skipping from Paige to maximum rank could have fatal difficulties since their body is actively responding to mana growth. 
+<br><br><b>Enhanced Speed</b>
+<br>Lily's gemstones were brilliant topaz, allowing her to run at double the speed of the average human being would be able to. This requires several seconds for her to reach her maximum speed since she is incapable of reaching it instantly.
+<br><br><b>Enhanced Strength</b>
+<br>Another set of gems were used to form Lily's body: Ruby. The Rubies give her enhanced strength, allowing her to punch/kick twice as hard and lift things twice as heavy than the average human of her size could while also making her muscles take twice as long to heal if injured.
+<br><br><b>Heightened Reflexes</b>
+<br>The fourth type of gems used in Lily's creation were Sapphire. Sapphire are attributed to mental facilities such as reflexes and intellect. In this case, Lily can process information  and react to things twice as quickly than the average human would be able to.
 </div>
 <div id="tab8">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/gGdgP6m.jpghttps://i.imgur.com/RwPLTpw.png"/>
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Kqy0KrQ.png"/>
+</div>
+
+<div id="tab9">
+<h1>Mana Manipulation</h1>
+<i>"The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)"</i>
+<br><br>
+<h1>Universal Spells</h1>
+<b>Mana Weave</b>
+<br>The simple act of moving one's mana pool through their own body. Channeling one's mana.
+<br><br><b>Mana Spark</b>
+<br>A basic mana projectile that can be used offensively or defensively. It causes no real damage other than a small sting when hit directly in the flesh.
+</div>
+<div id="tab10">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/RwPLTpw.png"/>
+</div>
+
+<div id="tab11">
+<h1>Enchantment: Paige</h1>
+<i>"The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted."</i>
+<br><br>
+<h1>Paige Spells</h1>
+<b>Big Boom!</b>
+<br>The caster enchants an item no bigger than an average sword to become coated in a thick six-inch layer of easily broken cushion-like mana around one intended part after charging for one rotation. The object will remain otherwise unaffected but upon a large amount of force being applied to the cushion, it will burst and release the mana it held in an outwards blast of kinetic energy. This blast extends forwards in a three foot wide wave that is one foot from top to bottom that travels a maximum distance of ten feet and is capable of rending/warping physical constructs of Tin (scaling to Iron at mage) durability. The wave of kinetic energy causes very clear visible distortion in its path of travel, and is slow moving (about the speed of a fast-walk). Big Boom lasts for two posts and is single-use only, meaning that as soon as the mana bubble is broken the enchantment ends and immediately goes on a one rotation cool down timer but also that the cushion will explode on the final post regardless of circumstances even if no external force is applied. Can only be cast on nonsentient/nonbiological/nonmagical objects readily available to the caster for “free,” and they can’t measure more than five feet at any angle.
+<br><br><b>Sock 'Em</b>
+<br>This enchantment enhances the object's impact force (provided the object is no larger than a baseballl in size) for two full rotations before going on a one post cool down. While not actively increasing the actual weight of the item in question, the enchantment causes the item to begin charging up when moving through the air. The furthest possible distance an object can travel (in order for this enchantment to remain active and effective, not that the object itself will suddenly stop moving since it’s nonmagic) is ten feet. If the maximum of ten feet is achieved the objects impacting force is strong enough to feel like it’s slugging with added weight of up to ten pounds.Ten pounds is if the object travels as a projectile for a full ten feet, every foot it travels stacks a singular extra pound and this does not provide a piercing power, it has no destructive measurement, it simply increases the impacting force behind the base object. Can only be cast on nonsentient/nonbiological/nonmagical objects readily available to the caster for “free,” and they can’t measure more than five feet at any angle.
+<br><br><b>No Thanks~</b>
+<br>When used on an small handheld object, this enchantment will become covered in a thick layer of the caster’s own nonsolid mana for three maximum posts. Without help of extra mana, the object will do seemingly nothing at all, but if the Enchanter weaves half of the amount of mana it took to cast the enchantment in the first place, the mana coating will suddenly be able to be manipulated into a one-time use only rounded pane of solid mana equal to Tin (scaling to Iron at Mage) in strength so long as it is directly in contact with the item and can be formed anywhere along its structure. This barrier is two feet in diameter and is capable of defending against a singular attack of equal ranking before breaking, primarily physical attacks. After the secondary effect is used, the barrier may remain for one post (unless destroyed) before both the barrier and the enchantment itself completely deactivate regardless if it hasn't hit the three-post limit. Can only be cast on nonsentient/nonbiological/nonmagical objects readily available to the caster for “free,” and they can’t measure more than five feet at any angle.
+</div>
+<div id="tab12">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/gGdgP6m.jpg"/>
 </div>
